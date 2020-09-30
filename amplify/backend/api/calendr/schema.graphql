@@ -1,6 +1,16 @@
-type Todo @model {
+type Location {
+  lat: Float!
+  lon: Float!
+}
+type Event @model
+@auth(rules:[{allow:owner}])
+@key(name: "eventsByStartDate", fields:["start"], queryField: "eventsByStartDate")
+{
   id: ID!
-  name: String!
+  title: String!
+  start: AWSDateTime!
+  end: AWSDateTime!
   description: String
-  completed: Boolean
+  tags: [String!]
+  location: Location
 }

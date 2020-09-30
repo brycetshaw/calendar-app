@@ -68,7 +68,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-calendr-calendr-225427-deployment",
-          "S3Key": "amplify-builds/calendreventroute-6d34365a47377a46524f-build.zip"
+          "S3Key": "amplify-builds/calendreventroute-2b49776e2f304f67554c-build.zip"
         }
       }
     },
